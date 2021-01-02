@@ -184,21 +184,6 @@ app.get('/', (req, res) => {
   })
 
 
-  var promise_ret=db.getcart(
-	"2aa4d6da-4579-4b9d-95eb-0e946baa9b17-2021-01-01T21:30:27.905Z-Alex"
-);
-			promise_ret.then(
-				(result)=>{
-					console.log(result)
-					
-				},
-				(error)=>{
-					console.log("GET ERROR "+error);
-					
-				}
-			)
-		
-
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`app listening at ${port}`)
 })
