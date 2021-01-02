@@ -1,5 +1,5 @@
 var mongoUrl = "mongodb://localhost:27017";
-var mongoName = "store";
+var mongoName = "demo";
 var Database = require("./Database.js");
 var db = new Database(mongoUrl, mongoName);
 
