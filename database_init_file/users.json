@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "5feef4a28b3a58768739aa1f"
-  },
   "user_id": 1,
   "cart": [
     {
@@ -70,199 +67,82 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fef1b5ef33ce78632b525ef"
-  },
   "user_id": "[object Object]-[object Object]"
 },{
-  "_id": {
-    "$oid": "5fef1b5fb4a187863b28dbe1"
-  },
   "user_id": "[object Object]-[object Object]"
 },{
-  "_id": {
-    "$oid": "5fef1b76b1dfcf86494c56a8"
-  },
   "user_id": "[object Object]-[object Object]"
 },{
-  "_id": {
-    "$oid": "5fef1c8229b31e86a8428e6a"
-  },
   "user_id": "7f9a9f39-cc0c-4eeb-b295-4379a43798d9-[object Object]"
 },{
-  "_id": {
-    "$oid": "5fef1caf652d8b86c26928a0"
-  },
   "user_id": "ff29b8de-9851-461d-93e1-6671429c93c2-alex"
 },{
-  "_id": {
-    "$oid": "5fef1cbd622dc586d2c514db"
-  },
   "user_id": "a2bf42fc-4195-4710-a662-399a3417c1c2-alex"
 },{
-  "_id": {
-    "$oid": "5fef1cbeff0a0286d70f7494"
-  },
   "user_id": "7ec9870c-6551-4ded-990f-1474a54af554-alex"
 },{
-  "_id": {
-    "$oid": "5fef1d267aacd98704172db1"
-  },
   "user_id": "21444314-7c70-4695-8747-b926b9adc914-2021-01-01T13:01:26.618Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1d67956efb871591a457"
-  },
   "user_id": "c6c75f33-ffc9-41d1-b086-0ddfdc25ad44-2021-01-01T13:02:31.189Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1d7ef1b2728722ddd3f0"
-  },
   "user_id": "ed3d1141-7188-4d5f-8cd7-d313de4f4841-2021-01-01T13:02:54.180Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1d82f00446872ed5031e"
-  },
   "user_id": "e4271b44-eb9a-40b4-92dc-67b84be5fad1-2021-01-01T13:02:58.874Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1d99a41659873ae4dee3"
-  },
   "user_id": "af1b65c2-f9fe-44fa-a4a2-0c9d357cc3bf-2021-01-01T13:03:21.147Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1da34c0b508748460bd9"
-  },
   "user_id": "34947d09-2949-4546-926a-0dad9ea257fd-2021-01-01T13:03:31.726Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1dbbd81df48754273c0d"
-  },
   "user_id": "6fef555c-e761-45e0-b504-241459c4077b-2021-01-01T13:03:55.614Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1e74569b84877235eea7"
-  },
   "user_id": "5ba9a605-958a-44c3-8e10-7ee6f415c1f2-2021-01-01T13:07:00.197Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1ebe7d807d8792258ce9"
-  },
   "user_id": "69796f08-b6be-432f-b687-d295076f172f-2021-01-01T13:08:14.383Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1ec07d807d8792258cea"
-  },
   "user_id": "4df53b8f-df91-4d31-b0b2-f0afce0be210-2021-01-01T13:08:16.924Z-name"
 },{
-  "_id": {
-    "$oid": "5fef1efe26f38187cdb5b8dd"
-  },
   "user_id": "0a425d13-bc00-4f64-8e54-315ee616cf92-2021-01-01T13:09:18.809Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1f0026f38187cdb5b8de"
-  },
   "user_id": "56ac1217-de86-4dd7-b9f0-1d62cd8befde-2021-01-01T13:09:20.677Z-name"
 },{
-  "_id": {
-    "$oid": "5fef1f0726f38187cdb5b8df"
-  },
   "user_id": "0feff6f9-2e21-4c5d-ae2f-de9d61a2abb6-2021-01-01T13:09:27.171Z-name"
 },{
-  "_id": {
-    "$oid": "5fef1f1226f38187cdb5b8e0"
-  },
   "user_id": "c8e3de51-29bf-4310-b708-1eb80fd6bc40-2021-01-01T13:09:38.159Z-pixel"
 },{
-  "_id": {
-    "$oid": "5fef1f4be853f487dff32e7c"
-  },
   "user_id": "02642ed4-13b3-46f1-95b5-183cef8c3da3-2021-01-01T13:10:35.102Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef1f4ee853f487dff32e7d"
-  },
   "user_id": "e242f21f-9884-4869-adea-108b65354070-2021-01-01T13:10:38.187Z-pixel"
 },{
-  "_id": {
-    "$oid": "5fef91e3e853f487dff32e7e"
-  },
   "user_id": "8238b2a1-3564-49fc-9e77-65c078ed0269-2021-01-01T21:19:31.524Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fef91e5e853f487dff32e7f"
-  },
   "user_id": "8e7ec0ba-625b-49d0-968c-118e8cd39677-2021-01-01T21:19:33.698Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fef925ce853f487dff32e80"
-  },
   "user_id": "84590c9a-c0c3-4ce8-8f62-2b21e0ddd315-2021-01-01T21:21:32.729Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925ee853f487dff32e81"
-  },
   "user_id": "bf0b0d5a-f0b7-4fc6-b8e8-435bc0f21e7f-2021-01-01T21:21:34.004Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925ee853f487dff32e82"
-  },
   "user_id": "310f6ef6-1a46-4906-9453-b203086fed95-2021-01-01T21:21:34.653Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925ee853f487dff32e83"
-  },
   "user_id": "9a3a7327-ea32-49f9-a773-0c615bf7bc05-2021-01-01T21:21:34.882Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925fe853f487dff32e84"
-  },
   "user_id": "d3e6630d-1e20-4425-88fc-c6be817aaab4-2021-01-01T21:21:35.053Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925fe853f487dff32e85"
-  },
   "user_id": "7727fa22-82dd-4f1b-a983-442e6e7701f1-2021-01-01T21:21:35.242Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef925fe853f487dff32e86"
-  },
   "user_id": "d63b9b08-41e6-4496-9718-95c24cfb1f89-2021-01-01T21:21:35.403Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef930ae853f487dff32e87"
-  },
   "user_id": "c3245a27-b6db-4a67-886e-5d0887efe613-2021-01-01T21:24:26.856Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef933730d99ba067da8397"
-  },
   "user_id": "02bb31ef-0153-4852-8d4c-0b68c40d3625-2021-01-01T21:25:11.504Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef933f30d99ba067da8398"
-  },
   "user_id": "25756ae3-7a7c-4b72-97c6-8d8bb6f3cab6-2021-01-01T21:25:19.824Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef935a39740ea0778fdfcd"
-  },
   "user_id": "5ec8e5f5-3c58-4745-b774-c6c7dda3a14b-2021-01-01T21:25:46.493Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef93dd39740ea0778fdfce"
-  },
   "user_id": "e14f4278-8f16-4032-8d24-0324dbf523c6-2021-01-01T21:27:57.145Z-sap"
 },{
-  "_id": {
-    "$oid": "5fef943139740ea0778fdfcf"
-  },
   "user_id": "5ee1eeb1-cf75-4364-8f80-c759338d69bf-2021-01-01T21:29:21.539Z-blake"
 },{
-  "_id": {
-    "$oid": "5fef947339740ea0778fdfd0"
-  },
   "user_id": "2aa4d6da-4579-4b9d-95eb-0e946baa9b17-2021-01-01T21:30:27.905Z-Alex",
   "cart": [
     {
@@ -283,29 +163,14 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fef951639740ea0778fdfd1"
-  },
   "user_id": "e1df1076-a3ce-41c5-8133-03e0f3c4882c-2021-01-01T21:33:10.661Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fef953d39740ea0778fdfd2"
-  },
   "user_id": "d2358178-7ab1-43e7-84ee-68fc9e7dcf5d-2021-01-01T21:33:49.037Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fef95db39740ea0778fdfd3"
-  },
   "user_id": "bc3f3f9e-0f19-44aa-8b30-39b927cf0a8e-2021-01-01T21:36:27.752Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fef960d39740ea0778fdfd4"
-  },
   "user_id": "d995f062-5e08-432a-a7ac-7eb92f1ee91b-2021-01-01T21:37:17.705Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fef961639740ea0778fdfd5"
-  },
   "user_id": "497f1444-723b-413e-b942-5c7f14bfa2ca-2021-01-01T21:37:26.230Z-tiffany",
   "cart": [
     {
@@ -314,9 +179,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fef967d39740ea0778fdfd6"
-  },
   "user_id": "afce06fe-9e5f-4bbe-b363-66067800e1ce-2021-01-01T21:39:09.649Z-tiffany",
   "cart": [
     {
@@ -325,9 +187,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fef968939740ea0778fdfd7"
-  },
   "user_id": "4dd731ab-1808-4e0e-aed3-643171bd27cc-2021-01-01T21:39:21.176Z-blake",
   "cart": [
     {
@@ -340,74 +199,32 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fef9941c2120da1dbb1211e"
-  },
   "user_id": "9483f43b-f911-41f3-9f92-76f685663fdc-2021-01-01T21:50:57.659Z-alex"
 },{
-  "_id": {
-    "$oid": "5fef9a972c3a5ea1f7ade058"
-  },
   "user_id": "1db3c1ae-f466-4e6a-b7db-cad91d516fce-2021-01-01T21:56:39.814Z-alex"
 },{
-  "_id": {
-    "$oid": "5fefa5ee9c8115a5a88fb59c"
-  },
   "user_id": "07a9090f-3809-41be-be43-7f3273ca3482-2021-01-01T22:45:02.808Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefa6df9c8115a5a88fb59d"
-  },
   "user_id": "a163f620-3451-42d4-a208-6bbad13e2a2f-2021-01-01T22:49:03.611Z-cio"
 },{
-  "_id": {
-    "$oid": "5fefafa69c8115a5a88fb59e"
-  },
   "user_id": "75981e4c-e564-423e-a791-b6962d7b0307-2021-01-01T23:26:30.395Z-cisco"
 },{
-  "_id": {
-    "$oid": "5fefafc39c8115a5a88fb59f"
-  },
   "user_id": "7bf19fdc-febd-4fc2-8d6c-cbc2ab48835d-2021-01-01T23:26:59.935Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefb1399c8115a5a88fb5a0"
-  },
   "user_id": "b02e9925-2823-4bbe-b641-5903c6c02d12-2021-01-01T23:33:13.556Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefb1b89c8115a5a88fb5a1"
-  },
   "user_id": "e65d5a92-09b9-40a0-aee5-617d8d11800e-2021-01-01T23:35:20.901Z-cio"
 },{
-  "_id": {
-    "$oid": "5fefb2029c8115a5a88fb5a2"
-  },
   "user_id": "a72a858a-d470-4e58-8963-dad66693f0af-2021-01-01T23:36:34.890Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefb27a9c8115a5a88fb5a3"
-  },
   "user_id": "d3014343-0b6a-4586-9152-bd4ee8b8c032-2021-01-01T23:38:34.063Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefb3599c8115a5a88fb5a4"
-  },
   "user_id": "9a5fab2d-09fa-4b50-ab72-bf1fe017e17e-2021-01-01T23:42:17.651Z-blake"
 },{
-  "_id": {
-    "$oid": "5fefb3839c8115a5a88fb5a5"
-  },
   "user_id": "21f45d95-38f3-48dd-8aed-db3a74a1f2d1-2021-01-01T23:42:59.061Z-blake"
 },{
-  "_id": {
-    "$oid": "5fefb41c9c8115a5a88fb5a6"
-  },
   "user_id": "6bf87a4e-228a-4563-9eab-4ccb31049bbd-2021-01-01T23:45:32.683Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefb68d9c8115a5a88fb5a7"
-  },
   "user_id": "050a60cf-8478-44d3-8546-22a10ee62c8f-2021-01-01T23:55:57.972Z-tiffany",
   "cart": [
     {
@@ -428,9 +245,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefb6e29c8115a5a88fb5a8"
-  },
   "user_id": "07fb5356-35ec-40fb-b568-480210b11aa7-2021-01-01T23:57:22.438Z-sap come here",
   "cart": [
     {
@@ -439,9 +253,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefb7cc9c8115a5a88fb5a9"
-  },
   "user_id": "2816c8fb-1bd6-4fac-afe7-3ad96780f91e-2021-01-02T00:01:16.457Z-sap",
   "cart": [
     {
@@ -454,109 +265,46 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefb8ab9c8115a5a88fb5aa"
-  },
   "user_id": "091f53af-18fe-47c2-a9c7-98a413522de0-2021-01-02T00:04:59.060Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefb8ff9c8115a5a88fb5ab"
-  },
   "user_id": "ee1a39d0-ba03-4cab-bae9-76e6b6e57d92-2021-01-02T00:06:23.071Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefb9f89c8115a5a88fb5ac"
-  },
   "user_id": "e986cec4-3cd4-4648-9cbd-954e0b432ad2-2021-01-02T00:10:32.075Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefba159c8115a5a88fb5ad"
-  },
   "user_id": "1056521f-104f-43e5-883e-a7ce6ea30a55-2021-01-02T00:11:01.274Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefba5b9c8115a5a88fb5ae"
-  },
   "user_id": "d1c8bc9b-6671-4847-a170-3d4118acfd5a-2021-01-02T00:12:11.091Z-blake"
 },{
-  "_id": {
-    "$oid": "5fefbb1c9c8115a5a88fb5af"
-  },
   "user_id": "2a52ea18-8835-4557-9eaf-580c055d627a-2021-01-02T00:15:24.228Z-sap"
 },{
-  "_id": {
-    "$oid": "5fefbbb19c8115a5a88fb5b0"
-  },
   "user_id": "acf8d880-a87e-4357-8b27-0cd017708dfe-2021-01-02T00:17:53.377Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefbc429c8115a5a88fb5b1"
-  },
   "user_id": "dd62c35c-d4f6-401b-9c31-a3a4809cf2d7-2021-01-02T00:20:18.307Z-blake"
 },{
-  "_id": {
-    "$oid": "5fefbcbc9c8115a5a88fb5b2"
-  },
   "user_id": "f108ff83-c47a-4c4c-8d5c-b44a9f812315-2021-01-02T00:22:20.378Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefbdd89c8115a5a88fb5b3"
-  },
   "user_id": "223a4348-9504-4a88-94bb-50279b591cc9-2021-01-02T00:27:04.674Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefbdf79c8115a5a88fb5b4"
-  },
   "user_id": "e1625616-b431-4d4b-896e-0cd5e9738ae6-2021-01-02T00:27:35.643Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefbe779c8115a5a88fb5b5"
-  },
   "user_id": "e90a5f8e-fe8b-420f-a273-58b524f9594c-2021-01-02T00:29:43.722Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefbeb39c8115a5a88fb5b6"
-  },
   "user_id": "361d7ba0-e338-4d49-87cb-affd2d646775-2021-01-02T00:30:43.409Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefbef29c8115a5a88fb5b7"
-  },
   "user_id": "d0e2a1d3-36bb-4b11-b7d7-1d5db55a234f-2021-01-02T00:31:46.669Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefbf3a9c8115a5a88fb5b8"
-  },
   "user_id": "da8248d2-a2b0-488f-b8db-0e2c3d883db5-2021-01-02T00:32:58.598Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc0b9e784c9b0d47a651c"
-  },
   "user_id": "97885b61-335f-4a63-91a5-388faa0b85e3-2021-01-02T00:39:21.174Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc14ae784c9b0d47a651d"
-  },
   "user_id": "5ad30da1-d506-4901-85be-8712d70bda70-2021-01-02T00:41:46.854Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc265e784c9b0d47a651e"
-  },
   "user_id": "9dafa158-5b91-44a1-8700-ce1c52f63364-2021-01-02T00:46:29.099Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc2c9e784c9b0d47a651f"
-  },
   "user_id": "93094384-c705-4fa7-8187-acf4932b61e6-2021-01-02T00:48:09.547Z-cisco"
 },{
-  "_id": {
-    "$oid": "5fefc58de784c9b0d47a6520"
-  },
   "user_id": "f45806a9-c05d-4067-b9de-41cd0821f2ce-2021-01-02T00:59:57.556Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc594e784c9b0d47a6521"
-  },
   "user_id": "9ebe376c-5d18-4310-8db3-9a86e6ffb5d3-2021-01-02T01:00:04.402Z-Alex",
   "cart": [
     {
@@ -565,59 +313,26 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefc6d1e784c9b0d47a6522"
-  },
   "user_id": "87fbf09d-a7f3-4e40-819f-c129b8ba00d8-2021-01-02T01:05:21.893Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc6f3e784c9b0d47a6523"
-  },
   "user_id": "9c1735a6-e3e0-42be-ba68-d2d89cd8da57-2021-01-02T01:05:55.556Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc758e784c9b0d47a6524"
-  },
   "user_id": "2a921e51-2674-4208-a5d3-36f58a4a2a22-2021-01-02T01:07:36.384Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc78de784c9b0d47a6525"
-  },
   "user_id": "fb86fd84-93c9-4655-a87c-25ea629e89aa-2021-01-02T01:08:29.033Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc7c3e784c9b0d47a6526"
-  },
   "user_id": "81396250-eca4-443e-85d5-82792218894e-2021-01-02T01:09:23.127Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc7fbe784c9b0d47a6527"
-  },
   "user_id": "ae064945-0080-4764-af6a-71f7fb985b00-2021-01-02T01:10:19.719Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc807e784c9b0d47a6528"
-  },
   "user_id": "13787727-02d6-489e-95a4-612e42466299-2021-01-02T01:10:31.444Z-pearson"
 },{
-  "_id": {
-    "$oid": "5fefc834e784c9b0d47a6529"
-  },
   "user_id": "f83fe3b8-16db-4944-9fc3-92573974c27c-2021-01-02T01:11:16.916Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc859e784c9b0d47a652a"
-  },
   "user_id": "7f44b478-09f1-43e8-a63c-72d39fadff5e-2021-01-02T01:11:53.839Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefc85de784c9b0d47a652b"
-  },
   "user_id": "64853e89-d3f1-4c84-9f20-2ad181c21a52-2021-01-02T01:11:57.178Z-blake"
 },{
-  "_id": {
-    "$oid": "5fefc863e784c9b0d47a652c"
-  },
   "user_id": "f8df3bf1-b0a4-4545-aa20-6e4927299f6b-2021-01-02T01:12:03.473Z-blake",
   "cart": [
     {
@@ -630,9 +345,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefc888e784c9b0d47a652d"
-  },
   "user_id": "afd28c8c-f8ce-45a5-b067-80e9dfcd1fe9-2021-01-02T01:12:40.994Z-blake",
   "cart": [
     {
@@ -641,14 +353,8 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefc922e784c9b0d47a652e"
-  },
   "user_id": "ab2e1213-df87-44bc-bb8d-fd4d019de355-2021-01-02T01:15:14.389Z-Alex"
 },{
-  "_id": {
-    "$oid": "5fefc9a3e784c9b0d47a652f"
-  },
   "user_id": "1b6e2278-6ce9-4f49-b2ab-8a65507d95b9-2021-01-02T01:17:23.455Z-tiffany",
   "cart": [
     {
@@ -661,9 +367,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefc9f4e784c9b0d47a6530"
-  },
   "user_id": "ab75e854-5c8f-413b-abf8-1db9c66d44a1-2021-01-02T01:18:44.691Z-Alex",
   "cart": [
     {
@@ -688,14 +391,8 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefcb90e784c9b0d47a6531"
-  },
   "user_id": "30c0efc1-b0e4-474a-83ee-22cfc3eb672f-2021-01-02T01:25:36.591Z-tiffany"
 },{
-  "_id": {
-    "$oid": "5fefcbb8e784c9b0d47a6532"
-  },
   "user_id": "71774c51-3c40-44ab-a66c-e5c54c73210a-2021-01-02T01:26:16.815Z-tiffany",
   "cart": [
     {
@@ -708,9 +405,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefcbc9e784c9b0d47a6533"
-  },
   "user_id": "a6041bcf-7085-475a-9699-e151747b8b7d-2021-01-02T01:26:33.502Z-tiffany",
   "cart": [
     {
@@ -719,9 +413,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefcbd9e784c9b0d47a6534"
-  },
   "user_id": "e02cf82a-2215-45c1-8d2e-384d549465b5-2021-01-02T01:26:49.208Z-blake",
   "cart": [
     {
@@ -734,9 +425,6 @@
     }
   ]
 },{
-  "_id": {
-    "$oid": "5fefcbe2e784c9b0d47a6535"
-  },
   "user_id": "178e7f87-ea2a-4cdb-94f0-a7484a70a89d-2021-01-02T01:26:58.994Z-tiffany",
   "cart": [
     {
