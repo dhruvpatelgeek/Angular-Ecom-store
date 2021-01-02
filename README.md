@@ -1,5 +1,5 @@
 # Angular-Ecom-store
-###inspired by SAP Spartacus.
+### inspired by SAP Spartacus.
 This is a mean stack E-commerce application made using 
 MEAN (MongoDB, Express.js, Angular, and Node.js).
 
