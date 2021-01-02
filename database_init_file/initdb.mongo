@@ -1,0 +1,317 @@
+conn = new Mongo();
+db = conn.getDB("reherse");
+db.dropDatabase();
+imgHost = '/';
+
+result = db.chatrooms.insert([{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c15"
+  },
+  "name": "Red and White Shield",
+  "cost": 100,
+  "description": "Standard round wooden shield. It features a striking red and white design.  \n\nWooden shields are light, manageable, and offer relatively high magic absorption.  ",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/red_and_white_shield.png",
+  "type": "shield",
+  "quantity": 24
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c16"
+  },
+  "name": "Caduceus Round Shield ",
+  "cost": 200,
+  "description": "Standard round wooden shield.  It is decorated with twin snakes, an ancient symbol of the Great Swamp. Wooden shields are light, manageable, and offer relatively high magic absorption.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/caduceus_round_shield.png",
+  "type": "shield",
+  "quantity": 38
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c17"
+  },
+  "name": "Plank Shield ",
+  "cost": 50,
+  "description": "Makeshift shield cobbled together from wooden planks.\n\nProvides minimal protection, and at the cost of moderate humiliation.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/plank_shield1.png",
+  "type": "shield",
+  "quantity": 32
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c18"
+  },
+  "name": "Round Shield",
+  "cost": 250,
+  "description": "Standard round wooden shield.  \n\nWooden shields are light, manageable, and offer relatively high magic absorption.  ",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/round_shield.png",
+  "type": "shield",
+  "quantity": 31
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c19"
+  },
+  "name": "Golden Wing Crest Shield",
+  "cost": 500,
+  "description": "A blue knight's shield engraved with a golden wing crest.\n\nThis shield is exceptional amongst the enchanted blue shields; not only does it boast high magic absorption, but also enables its wielder to parry spells.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/golden_wing_crest_shield.png",
+  "type": "shield",
+  "quantity": 42
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1a"
+  },
+  "name": "Knight Shield ",
+  "cost": 1000,
+  "description": "Orthodox shield of the kind commonly used by low-ranking knights.\nMedium shields are the most average of shields, providing a practical balance of damage absorption, stability and weight.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/knight_shield.png",
+  "type": "shield",
+  "quantity": 48
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1b"
+  },
+  "name": "Stone Greatshield",
+  "cost": 3000,
+  "description": "A mossy stone disc. Though terribly heavy, it can serve as a shield.\n\nThe disc is a relic of ancient magic, and one can practically feel the power flowing through it.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/stone_greatshield.png",
+  "type": "shield",
+  "quantity": 20
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1c"
+  },
+  "name": "Black Iron Greatshield",
+  "cost": 4500,
+  "description": "Greatshield made of black iron, deeply feared for its association with Knightslayer Tsorig.\n\nBlack iron offers high defense, and is particularly effective at warding off fire.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/black_iron_greatshield.png",
+  "type": "shield",
+  "quantity": 24
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1d"
+  },
+  "name": "Wolf Knight's Greatshield",
+  "cost": 6000,
+  "description": "Greatshield of a knight tainted by the dark of the Abyss, and master of the wolf's blood of Farron.\n\nBoasts consistent defense and divine protection against various status effects.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/wolf_knights_greatshield.png",
+  "type": "shield",
+  "quantity": 30
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1e"
+  },
+  "name": "Lothric Knight ",
+  "cost": 20000,
+  "description": "Armor of a celebrated Lothric knight. A strong steel armor, if a little worn.\n\nThe Knight has served as one of the Three Pillars since ancient times, and shares place alongside the wyverns as a symbol of Lothric.\n\nOnly those possessing a knight's resolve are fit to wear this garment.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/lothric_knight_set_small.jpg",
+  "type": "armor",
+  "quantity": 49
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c1f"
+  },
+  "name": "Undead Legion",
+  "cost": 30000,
+  "description": "These undead warriors vowed to partake of wolf blood. They acted in the dark, seeking out any sign of the Abyss, fighting a constant war with its abominations. This pointed steel helm was a distinct symbol of the Legion, shirked as a sinister omen by the masses.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/undead_legion_set_small.jpg",
+  "type": "armor",
+  "quantity": 32
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c20"
+  },
+  "name": "Simple Knight",
+  "cost": 10000,
+  "description": "(Armor piece) of a lowly knight, fashioned from solid iron. This/these (armor piece) might be on the heftier side compared to others of their ilk, but as such offer great physical absorption in exchange for its/their imposing weight.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/knight_set_small.jpg",
+  "type": "armor",
+  "quantity": 19
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c21"
+  },
+  "name": "Havel's Set",
+  "cost": 60000,
+  "description": "Armor as if hewn from a giant boulder. Highly protective, but excessively heavy.\n\nThe warriors who followed Havel the Rock never flinched, nor retreated from battle, crushing any foe that stood in their way.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/havels_set_small.jpg",
+  "type": "armor",
+  "quantity": 27
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c22"
+  },
+  "name": "Catarina Set ",
+  "cost": 100000,
+  "description": "Distinctively shaped armor worn by the Knights of Catarina.\n\nOften ridiculed for its onion-like shape, infuriating the country's proud knights, but the masterfully forged curved design makes it very effective for deflective blows.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/catarina_set_small.jpg",
+  "type": "armor",
+  "quantity": 15
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c23"
+  },
+  "name": "Uchigatana",
+  "cost": 1000,
+  "description": "A unique katana characterized by the fine craftsmanship of an eastern land where it was forged.\n\nThe finely-sharpened blade cuts flesh like butter and causes bleeding, but breaks easily as a result.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/uchigatana.png",
+  "type": "sword",
+  "quantity": 16
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c24"
+  },
+  "name": "Dagger",
+  "cost": 160,
+  "description": "Small daggers lack power or reach, but can deal quick consecutive hits due to their light weight.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/Dagger2.png",
+  "type": "sword",
+  "quantity": 45
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c25"
+  },
+  "name": "Long Sword ",
+  "cost": 500,
+  "description": "A balanced, widely-used standard straight sword. Inflicts reliable standard damage, as well as high thrust damage.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/longsword.png",
+  "type": "sword",
+  "quantity": 33
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c26"
+  },
+  "name": "Broadsword",
+  "cost": 700,
+  "description": "A straight sword with a broad blade designed for slashing.\n\nA large sweeping attack makes this effective against crowds, but is prone to deflection from walls in narrow spaces.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/broadsword.png",
+  "type": "sword",
+  "quantity": 27
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c27"
+  },
+  "name": "Exile Greatsword",
+  "cost": 5000,
+  "description": "Bloodstained greatsword wielded by one of the Watchdogs of Farron, who preside over the slumber of fallen warriors. The blade is a reminder of the exile's past misdeeds.\n\nInhuman strength is required to wield this heaviest of curved greatswords.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/exile_greatsword.png",
+  "type": "sword",
+  "quantity": 10
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c28"
+  },
+  "name": "Valorheart",
+  "cost": 4000,
+  "description": "Weapon once wielded by the Champion of the Undead Match. A special paired set consisting of a broad sword and a lion shield.\n\nThe champion fought on, without rest, until he lost his mind. In the end, only his page and a lone wolf stayed at his side.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/valorheart_-_final.png",
+  "type": "sword",
+  "quantity": 39
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c29"
+  },
+  "name": "Black Knight Greatsword ",
+  "cost": 6000,
+  "description": "Ultra greatsword wielded by the Black Knights who wander the lands. Designed to face chaos demons.\n\nThe Black Knights constantly faced foes larger than themselves, and this sword's unique attack greatly reduces enemy poise",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/black_knight_greatsword.png",
+  "type": "sword",
+  "quantity": 30
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2a"
+  },
+  "name": "Shotel",
+  "cost": 200,
+  "description": "Broadly curved sword known as the favored weapon of the tragic Embraced Knight.\n\nShaped to sneak around the defenses of shields, this sword requires ample dexterity to wield effectively.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/shotel.png",
+  "type": "sword",
+  "quantity": 17
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2b"
+  },
+  "name": "Sellsword Twinblades",
+  "cost": 900,
+  "description": "Paired scimitars used by certain sellswords. The scimitars' sharp blades make for effective slashing attacks, but fare poorly against metal armor and tough scale-covered hides.\n\nWith a scimitar in each hand, the wielder can vary their onslaught with unique left-handed attacks when in the proper stance.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/sellsword_twinblades.png",
+  "type": "sword",
+  "quantity": 33
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2c"
+  },
+  "name": "Ring of Sacrifice",
+  "cost": 1000,
+  "description": "This mystical ring was created in a sacrificial rite of Velka, the Goddess of Sin.\n\nIts wearer will lose nothing upon death, but the ring itself breaks.\n\nA sacrifice is only worth as much as the life it spares.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/ring_of_sacrifice.png",
+  "type": "ring",
+  "quantity": 11
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2d"
+  },
+  "name": "Silvercat Ring ",
+  "cost": 500,
+  "description": "In the Age of Gods, or possibily following it, an old cat was said to speak a human tongue, with the voice of an old woman, and the form of a fanciful immortal.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/silver_cat_ring.png",
+  "type": "ring",
+  "quantity": 49
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2e"
+  },
+  "name": "Red Tearstone Ring",
+  "cost": 2000,
+  "description": "This stone is said to be a tear of mourning of the goddess Caitha, and of course, tears are always more beautiful near death.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/red_tearstone_ring.png",
+  "type": "ring",
+  "quantity": 16
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c2f"
+  },
+  "name": "Wood Grain ring",
+  "cost": 200,
+  "description": "This special ring crafted in an Eastern land is made of metal, but with a wood grain crest on its surface. Slows equipment degradation.\n\nWielders of swords originating in the same region follow a practice of inscribing special words on the blades of their swords, and are naturally drawn to this ring.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/wood_grain_ring.png",
+  "type": "ring",
+  "quantity": 16
+},{
+  "_id": {
+    "$oid": "5feeec9faf9c511c9a8c2c30"
+  },
+  "name": "Chloranthy Ring",
+  "cost": 50,
+  "description": "This old ring is named for its decorative green blossom, but its luster is long since faded.",
+  "url_index_to_img": "https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/chloranty_ring.png",
+  "type": "ring",
+  "quantity": 33
+}]);
+
+print(result);
+
+result = db.conversations.insert([
+	{
+  "_id": {
+    "$oid": "5fefcbe2e784c9b0d47a6535"
+  },
+  "user_id": "178e7f87-ea2a-4cdb-94f0-a7484a70a89d-2021-01-02T01:26:58.994Z-tiffany",
+  "cart": [
+    {
+      "object_id": "5feeec9faf9c511c9a8c2c30",
+      "object_id_quantity": 1
+    },
+    {
+      "object_id": "5feeec9faf9c511c9a8c2c2f",
+      "object_id_quantity": 1
+    },
+    {
+      "object_id": "5feeec9faf9c511c9a8c2c22",
+      "object_id_quantity": 1
+    },
+    {
+      "object_id": "5feeec9faf9c511c9a8c2c23",
+      "object_id_quantity": 1
+    }
+  ]
+}
+]);
+
+print(result);
