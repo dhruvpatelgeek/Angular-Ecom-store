@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http'
 import { Addtocart } from '../classes/addtocart';
 @Injectable()//declaring a class of type injectable
 export class freeapiservice{
-    url="http://localhost:3000";//DRY principle
+    url="http://169.55.163.41:3000";//DRY principle
     //now we will inject the httpt client using thr constuctor
     constructor(private httpclient: HttpClient){};
 

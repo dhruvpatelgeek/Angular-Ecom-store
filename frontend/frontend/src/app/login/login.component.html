@@ -12,7 +12,8 @@
     <div id="inputform">
         <form>
             <p>Please enter your name to continue</p><br>
-            <input [(ngModel)]="name" type="text" id="input_user_box" placeholder="Enter Any Name">{{name}}
+            <input [(ngModel)]="name" type="text" id="input_user_box" name="null">{{name}}
+            
             <br>
             <p id="button padding"></p>
             <button id="continue" (click)="login()">Continue</button>
