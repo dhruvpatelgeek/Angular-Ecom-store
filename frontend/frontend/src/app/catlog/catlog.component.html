@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+
+<div class="container">
+    <div class="item" *ngFor="let item of listItems">
+        <div class="item_image" >
+            <img class="center" src="{{item.url_index_to_img}}">
+        </div>
+        
+
+        <div class="des_field_comp">
+            <h3>
+                {{item.name }}
+            </h3>
+            <p class="des">
+                {{item.description}}
+            </p>
+            <p class="quant">
+                Qty:  <span class="box">{{item.quantity}}</span>
+            </p>
+            <p class="cost">
+                price: <span class="box">{{item.cost}} gold coins</span> 
+            </p>
+
+            <div class="purchace_bar">
+                <div class="name">
+                   <input type="text" class="qty_io" placeholder="1 item">
+                </div>
+                 <div class="button_cart">
+                    <button class="add_to_cart">add to cart</button>
+                </div>
+            </div>
+        </div>
+
+       
+       
+    </div>
+</div>
+
+   

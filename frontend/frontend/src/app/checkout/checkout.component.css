@@ -1,0 +1,110 @@
+h1{
+    background-color: aqua;
+}
+
+.container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: minmax(100px,auto);
+    gap: 10px;
+  }
+
+.item{
+    padding: 25px;
+    display: inline;
+    border:solid 1px rgb(0, 0, 0);
+}
+
+.qty_io
+{   
+    height: 50px;
+    width: 70px;
+    background: lightgrey;
+    border:none;
+    border-radius: 5px;
+}
+button{
+    white-space: normal;
+    border:0px;
+    font-family: lato;
+    font-size: 1.5vw;
+    height: 50px;
+    padding: 2px;
+    color: black;
+}
+
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+button:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(20, 255, 12);
+}
+
+.name{
+    padding:25px;
+    order: 1;
+}
+.button_cart{
+    padding:25px;
+    order: 2;
+}
+
+.purchace_bar{
+    display: flex;
+    grid-column: 1/-1;
+   
+    grid-row: 3/-1;
+}
+
+
+
+.des{
+    grid-column: 1/-1;
+    font-family: lato;
+    font-size: 1vw;
+    color: rgb(88, 87, 87);
+}
+
+.cost{
+    color: rgb(158, 134, 0);
+    font-family: lato;
+    font-size: 1.25vw;
+    order:4
+}
+
+
+
+.center {
+    display: block;
+    max-height: 100px;
+  }
+.name_item{
+    right: 50vw;
+    font-family: lato;
+}
+
+.cost_item{
+    right: 30px;
+    font-family: lato;
+}
+
+.total{
+    position: absolute;
+    right: 15vw;
+    font-family: lato;
+    font-size: x-large;
+    background-color: salmon;
+}
+
+.exit{
+    position: absolute;
+    right: 5vw;
+}
+
+.end_line{
+    display: none;
+    padding: 100px;
+}

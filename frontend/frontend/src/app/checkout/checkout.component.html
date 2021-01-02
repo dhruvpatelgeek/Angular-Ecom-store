@@ -1,0 +1,31 @@
+<div>
+    <button (click)="goBack()">
+       Back
+    </button>
+
+    <div class="container">
+        <div class="item" *ngFor="let item of listItems">
+                <div class="item_image" >
+                    <img class="center" src="{{item.url_index_to_img}}">
+                </div>
+                <h3 class="name_item">
+                    {{item.name }}
+                </h3>
+                <p class="cost_item">
+                    price: <span class="box">{{item.cost}} gold coins</span> 
+                </p>
+        </div>
+    </div>
+    
+    <p class="total">
+        ${{total}}
+    </p>
+    <button class="exit" (click)="exit()">
+        checkout
+    </button>
+    <hr class="end_line">
+</div>
+
+
+    
+

@@ -1,0 +1,22 @@
+
+  <div class="content">
+    <img id="logo" src="./assets/logo_white.svg">
+    <img id="logo_text" src="./assets/logo_white_text.svg">
+
+    <div id="welcometext">
+        One Stop Shop for your
+        Medieval War needs<br><br>
+        MEAN(MongoDB, Express.js,Angular,Node.js)
+    </div>
+
+    <div id="inputform">
+        <form>
+            <p>Please enter your name to continue</p><br>
+            <input [(ngModel)]="name" type="text" id="input_user_box" placeholder="Enter Any Name">{{name}}
+            <br>
+            <p id="button padding"></p>
+            <button id="continue" (click)="login()">Continue</button>
+          </form>
+    </div>
+  </div>
+

@@ -1,0 +1,16 @@
+.container{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    height: 15vh;
+    display: flexbox;
+}
+
+.logo{
+    order:1;
+}
+
+.logo_text{
+    order:2;
+}
