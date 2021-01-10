@@ -19,9 +19,9 @@ checkout
 they communicate with each other using event emitters, observers, and other angular specific methords.
 
 #### main screen
-![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.44.14%20PM.png)
+![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-09%20at%2010.23.56%20PM.png)
 #### item catlog
-![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.44.28%20PM.png)
+![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-09%20at%2010.24.21%20PM.png)
 #### checkout page
 ![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.45.02%20PM.png)
 ![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.45.10%20PM.png)
