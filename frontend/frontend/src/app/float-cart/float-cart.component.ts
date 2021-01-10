@@ -82,6 +82,7 @@ export class FloatCartComponent implements OnInit {
   }
 
   exit(){
+    this.empty=true;
     this.notify.emit("checkout");
   }
 

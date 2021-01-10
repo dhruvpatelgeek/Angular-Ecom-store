@@ -27,11 +27,15 @@ export class AppComponent {
             this.userName='null';
             this.userAuth=false;
             this.checkout=false;
+            this.refreshFloatCart=0;
+            alert("transcation complete- THANK YOU FOR SHOPPING");// dummy purchace;
+            window.location.reload();
       }
       break;
 
       case"checkout":{
         this.checkout=true;
+
       }
       break;
       default:

@@ -49,7 +49,7 @@
 }
 
 #cart_label:hover{
-    background-color: black;
+    background-color: rgb(20, 173, 0);
     color: white;
     border-radius: 20px;
     box-shadow:
