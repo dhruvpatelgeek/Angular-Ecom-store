@@ -1,0 +1,26 @@
+#banner{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2vh;
+    word-wrap: break-word;
+
+    position: fixed;
+    bottom: 10px;
+    left:10px;
+
+    font-family: lato;
+    font-weight: 600;
+    font-size: 1.3vw;
+
+    z-index: 2000;
+
+    box-shadow: 0 0 11px rgb(255, 255, 255);
+
+    border-radius: 5px;
+
+    transition: all 0.2;
+}
+
+#banner:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}

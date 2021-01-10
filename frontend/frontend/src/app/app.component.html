@@ -1,11 +1,16 @@
 <app-login *ngIf="!userAuth;" (loginUser)="authUser($event)"></app-login>
 <app-logo *ngIf="userAuth" ></app-logo>
 
+
+    
+
 <div  *ngIf="userAuth&&(!checkout)">
     <app-nav (notify)="changePost($event)"></app-nav>
     <app-item-view (addtocart)="additem($event)"></app-item-view>
+    <app-float-cart id="float" [item]="userId" [refresh]="refreshFloatCart" (notify)="changePost($event)"></app-float-cart>
+    <app-banner *ngIf="banner">Item added to cart</app-banner>
 </div>
 
-
 <app-checkout  *ngIf="userAuth&&checkout" [item]="userId" (retCheckout)="changePost($event)"></app-checkout>
+
 

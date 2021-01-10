@@ -14,7 +14,9 @@ import {CommonService} from './service/common.service';
 
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { ItemViewComponent } from './item-view/item-view.component'
+import { ItemViewComponent } from './item-view/item-view.component';
+import { FloatCartComponent } from './float-cart/float-cart.component';
+import { BannerComponent } from './banner/banner.component'
 
 
 
@@ -26,7 +28,9 @@ import { ItemViewComponent } from './item-view/item-view.component'
     CatlogComponent,
     LoginComponent,
     CheckoutComponent,
-    ItemViewComponent
+    ItemViewComponent,
+    FloatCartComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<div class="container" *ngIf="cartStatus" >
+    <div *ngIf="empty; else showItem">
+        <p id="empty_cart">
+            Cart is empty Please Add Something
+        </p>
+    </div>
+    <ng-template #showItem>
+        <div class="item" *ngFor="let item of listItems">
+            <div class="item_image" >
+                <img class="center" src="{{item.url_index_to_img}}">
+            </div>
+            <h3 class="name_item">
+                {{item.name }}
+            </h3>
+            <p class="cost_item">
+                price: <span class="box">{{item.cost}} gold coins</span> 
+            </p>
+    </div>
+
+    <p class="total">
+        ${{total}}
+    </p>
+    <button class="exit" (click)="exit()" >
+        checkout
+    </button>
+    </ng-template>
+   
+</div>
+
+
+<button id="cart_label" (click)=toggleCart()>Cart</button>
+
+<p id="item_counter">{{refresh}}</p>

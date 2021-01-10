@@ -8,11 +8,13 @@ import { Addtocart } from './classes/addtocart';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  banner=false;
   userAuth=false;
   userId='null';
   userName='null';
   title="font";
   checkout=false;
+  refreshFloatCart=0;
   constructor(private _freeapiservice:freeapiservice,
                 private commonService: CommonService){
   }
@@ -49,13 +51,19 @@ export class AppComponent {
     cartobj.user_id=this.userId;
     cartobj.object_id_quantity=1;
     var name=req.name;
-
+    
     this._freeapiservice.addtocart(cartobj)
     .subscribe(
       (data)=>{
         if(data)
         {
-          alert("ADDED "+name+" to cart"+" for "+this.userName);
+          this.banner=true;
+          
+          var timer=setTimeout(()=>{
+            this.banner=false;
+          },2000);
+
+          this.refreshFloatCart++;
         }
         else
         {
