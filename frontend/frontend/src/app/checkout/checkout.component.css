@@ -75,6 +75,12 @@ button:active{
     order:4
 }
 
+#loading{
+    position: fixed;
+    top:50vh;
+    right: 50vw;
+}
+
 
 
 .center {

@@ -20,9 +20,9 @@ export class CheckoutComponent implements OnInit {
   listItems:items[];
   _item:items;
   total:number;
- 
+  showLoadingGif:boolean;
   constructor(private _freeapiservice:freeapiservice){
-
+    this.showLoadingGif=false;
   }
   
   goBack(){
@@ -38,6 +38,7 @@ export class CheckoutComponent implements OnInit {
   }
 
   exit(){
+    this.showLoadingGif=true;
     setTimeout(() => {
       alert("transcation complete- THANK YOU FOR SHOPPING");// dummy purchace;
       this.retCheckout.emit("logout");
