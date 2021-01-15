@@ -3,7 +3,11 @@
   <hr>
 </div>
 <div id="main">
+
   <div id="container">
+<!--
+PLACE HOLDER CREDIT CARD------------------------------------------------
+-->
     <div id="checkout-form">
       <form>
           <label for="name">Cardholder Name </label><br>
@@ -13,27 +17,61 @@
           <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" (keydown)="sendCardNum($event)"><br>
   
           <label for="expdate">expiry date</label><br>
-          <input type="text" maxlength="5" id="expdate" name="expdate" placeholder="Cardholder Name"  (keydown)="sendExpDate($event)"><br>
+          <input type="text" maxlength="5" id="expdate" name="expdate" placeholder="expiry date"  (keydown)="sendExpDate($event)"><br>
         </form>
     </div>  
     <br>
-    <app-credit-card id="card"
-    [_cardHolderName]="name"
-    [_cardNumber]="number"
-    [_cardExpDate]="date"
-    ></app-credit-card>
-    <button id="exit" (click)="exit()" [disabled]="!cardValid">
-       Place order
-    </button>
-  </div>
 
-  <app-recipt [_saltedtoken]="saltedToken" id=recipt></app-recipt>
+<!--
+----------------------------------------------------------------
+-->
 
+<!--
+Checkout BLOCK------------------------------------------------
+-->
+
+ <!-- credit card component
+        visual indication of the card and if it is valid or not
+        INPUT: [_cardHolderName]="name" - name 
+        INPUT: [_cardNumber]="number" - credit card number
+        INPUT: [_cardExpDate]="date"  - expiry date
+    -->
+<app-credit-card id="card"
+[_cardHolderName]="name"
+[_cardNumber]="number"
+[_cardExpDate]="date"
+></app-credit-card>
+
+<button id="exit" (click)="exit()" [disabled]="!cardValid">
+  Place order
+</button>
 </div>
+
+<!-- recipt card component
+        visual indication of the card and if it is valid or not
+        INPUT: [_saltedtoken]<- saltedToken send the auth token given by the server
+    -->
+<app-recipt [_saltedtoken]="saltedToken" id=recipt></app-recipt>
+
+<!--
+----------------------------------------------------------------
+-->
+
+  
+   
+</div>
+
+
+<!--
+LOADING GIF-----------------------------------------------
+-->
 
 <div id="loading" *ngIf="showLoadingGif">
   <img src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
 </div>
 
+<!--
+----------------------------------------------------------------
+-->
 
 

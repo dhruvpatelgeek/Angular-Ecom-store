@@ -5,6 +5,7 @@ export class CommonService {
   private notify = new Subject<any>();
   /**
    * Observable string streams
+   * to communicate between two different child components
    */
   notifyObservable$ = this.notify.asObservable();
 

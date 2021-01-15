@@ -8,7 +8,7 @@ import {Output,EventEmitter} from '@angular/core';
   styleUrls: ['./payment.component.css']
 })
 export class PaymentComponent implements OnInit {
-  @Input() saltedToken: string; // decorate the property with @Input()
+  @Input() saltedToken: string; // salted userid returned by the server
   @Output() retCheckout: EventEmitter<string>=new EventEmitter<string>();
   name:string;
   number:string;
