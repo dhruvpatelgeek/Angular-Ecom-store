@@ -27,3 +27,6 @@ they communicate with each other using event emitters, observers, and other angu
 #### checkout page
 ![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.45.02%20PM.png)
 ![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-01%20at%208.45.10%20PM.png)
+
+#### Payment page
+![](https://github.com/dhruvpatelgeek/Angular-Ecom-store/blob/main/screenshots/Screen%20Shot%202021-01-15%20at%205.53.53%20AM.png)
