@@ -1,3 +1,7 @@
+
+/**
+  * COMPONENT FOR DEBUGGED NOT TO BE EXPORTED
+ */
 import { Component, OnInit } from '@angular/core';
 
 import{items} from './cat_type_cast/cat_class';

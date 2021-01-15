@@ -1,3 +1,4 @@
+// cart object for a purchaced item to the server 
 export class Addtocart{
  
 	user_id:string;
