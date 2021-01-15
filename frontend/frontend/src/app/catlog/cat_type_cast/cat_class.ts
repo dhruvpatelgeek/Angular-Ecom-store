@@ -1,3 +1,4 @@
+// item class for showing the catlog
 export class items {
     "_id": string;
     "name": string;

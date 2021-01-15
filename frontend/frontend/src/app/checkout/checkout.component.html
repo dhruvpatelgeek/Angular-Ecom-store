@@ -4,7 +4,10 @@
     </button>
 
     <div class="container">
-        <div class="item" *ngFor="let item of listItems">
+        <!--
+            push all the items given by the server into the CSS grid
+        -->
+        <div class="item" *ngFor="let item of listItems"> 
                 <div class="item_image" >
                     <img class="center" src="{{item.url_index_to_img}}">
                 </div>

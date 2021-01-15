@@ -1,10 +1,13 @@
+
+
 <div class="container" >
+    <!--
+            iterate throung the list of objects and push them into the CSS grid temp
+    -->
     <div class="item" *ngFor="let item of listItems">
         <div class="item_image" >
             <img class="center" src="{{item.url_index_to_img}}">
         </div>
-        
-
         <div class="des_field_comp">
             <h3>
                 {{item.name }}

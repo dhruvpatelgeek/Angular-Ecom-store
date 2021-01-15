@@ -15,11 +15,11 @@ export class ItemViewComponent implements OnInit {
 
   @Output() addtocart: EventEmitter<any>=new EventEmitter<any>();
 
-  listItems:items[];
-  _item:items;
-  userId:string;
-  userName:string;
-  private subscription: Subscription;
+  listItems:items[]; // associatve array of item objects
+  _item:items; // single instance of item object
+  userId:string; // salted token send by the server
+  userName:string; // name entered by the user
+  private subscription: Subscription; // subcription service from angular core
 
   constructor(private _freeapiservice:freeapiservice,
     private commonService: CommonService){

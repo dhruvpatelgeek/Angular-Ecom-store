@@ -1,3 +1,4 @@
+// another free api servce for testing  [not to be exported in production]
 import{Injectable} from '@angular/core'
 import{Observable} from 'rxjs'
 import {HttpClient} from '@angular/common/http'
