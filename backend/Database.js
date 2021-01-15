@@ -107,8 +107,10 @@ Database.prototype.getItemWithId = function(item_id){
  */
 Database.prototype.getcart = function(salted_uid){
 	return this.connected.then(db =>
-		new Promise((resolve, reject) => {
+		new Promise((resolve) => {
+			// first see if the salted token sent by the client is correct or not
 			db.collection('users').find({"user_id":salted_uid}).toArray().then((docs) => {
+				// if it is not return an empty object
 				if(docs[0]==undefined)
 				{
 					resolve({
@@ -124,8 +126,10 @@ Database.prototype.getcart = function(salted_uid){
 					   });
 				}
 				else
-				{
+				{ // if the user id i correct
 					var promise_arr=[];
+					// iterate through his cart 
+					//and generate a promise array for all object in the cart
 					for(let i=0;i<docs[0].cart.length;i++)
 					{	var o_id = new ObjectID(docs[0].cart[i].object_id);
 						
@@ -140,6 +144,9 @@ Database.prototype.getcart = function(salted_uid){
 						promise_arr.push(promise_vector);
 					}
 					
+					// REsolve the resulting array of promises 
+					// and return the object list with the total as 
+					// an associative array
 					Promise.all(promise_arr).then((values) => {
 						var total=0;
 						for(let i=0;i<values.length;i++)
