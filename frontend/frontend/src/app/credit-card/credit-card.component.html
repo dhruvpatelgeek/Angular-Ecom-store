@@ -1,0 +1,18 @@
+<div id=card_background 
+    [style.background]="style"
+    [style.background-size]='bgSize'
+    *ngIf="infoReady; else showCard"
+    >
+    <p id="cardholder-name">{{cardHolderName}}</p>
+    <p id="card-number">{{cardNumber}}</p>
+    <p id="card-exp-date">{{cardExpDate}}</p>
+    <img id="brand-logo" src={{brand}}>
+</div>
+
+<ng-template #showCard>
+    <div id=card_background>
+    <p id="cardholder-name">CARDHOLDER NAME</p>
+    <p id="card-number">XXXX XXXX XXXX XXXX</p>
+    <p id="card-exp-date">XX/XX</p>
+    </div>
+</ng-template>

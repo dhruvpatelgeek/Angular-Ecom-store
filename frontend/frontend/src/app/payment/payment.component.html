@@ -1,0 +1,21 @@
+<div id="container">
+  <div id="checkout-form">
+    <form>
+        <label for="name">Cardholder Name </label><br>
+        <input type="text" id="name" maxlength="20" name="name" placeholder="Cardholder Name" (keydown)="sendName($event)"><br>
+    
+        <label for="ccn">Credit Card Number</label><br>
+        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" (keydown)="sendCardNum($event)"><br>
+
+        <label for="expdate">expiry date</label><br>
+        <input type="text" maxlength="5" id="expdate" name="expdate" placeholder="Cardholder Name"  (keydown)="sendExpDate($event)"><br>
+      </form>
+  </div>  
+  <br>
+  <app-credit-card id="card"
+  [_cardHolderName]="name"
+  [_cardNumber]="number"
+  [_cardExpDate]="date"
+  ></app-credit-card>
+</div>
+

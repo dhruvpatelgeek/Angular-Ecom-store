@@ -16,7 +16,9 @@ import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ItemViewComponent } from './item-view/item-view.component';
 import { FloatCartComponent } from './float-cart/float-cart.component';
-import { BannerComponent } from './banner/banner.component'
+import { BannerComponent } from './banner/banner.component';
+import { PaymentComponent } from './payment/payment.component';
+import { CreditCardComponent } from './credit-card/credit-card.component'
 
 
 
@@ -30,7 +32,9 @@ import { BannerComponent } from './banner/banner.component'
     CheckoutComponent,
     ItemViewComponent,
     FloatCartComponent,
-    BannerComponent
+    BannerComponent,
+    PaymentComponent,
+    CreditCardComponent
   ],
   imports: [
     BrowserModule,

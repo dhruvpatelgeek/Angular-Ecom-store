@@ -1,3 +1,5 @@
+
+<!--
 <app-login *ngIf="!userAuth;" (loginUser)="authUser($event)"></app-login>
 <app-logo *ngIf="userAuth" ></app-logo>
 
@@ -12,5 +14,6 @@
 </div>
 
 <app-checkout  *ngIf="userAuth&&checkout" [item]="userId" (retCheckout)="changePost($event)"></app-checkout>
+-->
 
-
+<app-payment></app-payment>

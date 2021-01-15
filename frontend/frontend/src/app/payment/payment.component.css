@@ -1,0 +1,41 @@
+#checkout-form{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2vw;
+    padding: 25px;
+    width:30%;
+    border: solid 1px black;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    font-family: lato;
+    font-weight: 200;
+    font-size: 1vw;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: lato;
+    font-weight: 200;
+    font-size: 1vw;
+  }
+  
+  ::placeholder {
+    font-family: lato;
+    font-weight: 200;
+    font-size: 1vw;
+  }
+
+  #card{
+    padding-top: 10vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
