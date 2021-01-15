@@ -1,4 +1,6 @@
-
+<!--
+LOGIN/AUTH BLOCK-------------------------------------------------------
+-->
   <div class="content">
     <img id="logo" src="./assets/logo_white.svg">
     <img id="logo_text" src="./assets/logo_white_text.svg">
@@ -12,6 +14,9 @@
     <div id="inputform">
         <form>
             <p>Please enter your name to continue</p><br>
+            <!--
+            ngModel to reflect the users input for a better UX
+            -->
             <input [(ngModel)]="name" type="text" id="input_user_box" name="null">{{name}}
             
             <br>
@@ -21,3 +26,6 @@
     </div>
   </div>
 
+<!--
+-------------------------------------------------------
+-->

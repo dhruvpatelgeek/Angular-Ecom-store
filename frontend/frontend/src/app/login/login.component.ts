@@ -11,8 +11,12 @@ export class LoginComponent implements OnInit {
 
   name='';
 
-  @Output() loginUser: EventEmitter<string>=new EventEmitter<string>();
+  @Output() loginUser: EventEmitter<string>=new EventEmitter<string>(); // send a string to chnage 
+                                                                       // the main DOM
 
+  /**
+  * Sends the entered username to the main parent
+  */
   login():void{
     if(this.name=='')
     {
