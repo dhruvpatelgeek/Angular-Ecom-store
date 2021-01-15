@@ -4,6 +4,13 @@ const { v4: uuidv4 } = require('uuid');
 
 
 
+/**
+ * Description
+ * @method Database
+ * @param {} mongoUrl
+ * @param {} dbName
+ * @return 
+ */
 function Database(mongoUrl, dbName){
 	if (!(this instanceof Database)) return new Database(mongoUrl, dbName);
 	this.connected = new Promise((resolve, reject) => {
@@ -28,9 +35,15 @@ function Database(mongoUrl, dbName){
 }
 
 // get all items 
+/**
+ * Description
+ * @method getItems
+ * @return CallExpression
+ */
 Database.prototype.getItems = function(){
 	return this.connected.then(db =>
 		new Promise((resolve) => {
+			// simply find all items in the store and return the object array
 			db.collection('items').find({}).toArray().then((docs) => {
 				resolve(docs);
 			}).catch((err) => {
@@ -41,6 +54,12 @@ Database.prototype.getItems = function(){
 	)
 }
 // get many items with type
+/**
+ * Description
+ * @method itemWithType
+ * @param {} type
+ * @return CallExpression
+ */
 Database.prototype.itemWithType = function(type){
 	return this.connected.then(db =>
 		new Promise((resolve) => {
@@ -55,6 +74,12 @@ Database.prototype.itemWithType = function(type){
 }
 
 // get one item with name
+/**
+ * Description
+ * @method getItemWithId
+ * @param {} item_id
+ * @return CallExpression
+ */
 Database.prototype.getItemWithId = function(item_id){
 	return this.connected.then(db =>
 		new Promise((resolve, reject) => {
@@ -74,6 +99,12 @@ Database.prototype.getItemWithId = function(item_id){
 }
 
 //user cart JSON given a username
+/**
+ * Description
+ * @method getcart
+ * @param {} salted_uid
+ * @return CallExpression
+ */
 Database.prototype.getcart = function(salted_uid){
 	return this.connected.then(db =>
 		new Promise((resolve, reject) => {
@@ -131,6 +162,12 @@ Database.prototype.getcart = function(salted_uid){
 }
 
 // post purchase with quantity,item_id
+/**
+ * Description
+ * @method addPurchace
+ * @param {} cartObj
+ * @return CallExpression
+ */
 Database.prototype.addPurchace = function(cartObj){
 	//var cartObj={
 	//	user_id:data_recived.user_id,
@@ -197,6 +234,12 @@ Database.prototype.addPurchace = function(cartObj){
 }
 
 // create user
+/**
+ * Description
+ * @method createUser
+ * @param {} name
+ * @return CallExpression
+ */
 Database.prototype.createUser = function(name){
 	//var cartObj={
 	//	user_id:data_recived.user_id,

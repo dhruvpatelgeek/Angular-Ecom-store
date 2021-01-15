@@ -6,17 +6,19 @@ var db = new Database(mongoUrl, mongoName);
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3000// change for deployment
 
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); // to retrive the cart object
 
 
+// loading the body parser
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true
   }));
 
+  // allow access form any HOST
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET , PUT , POST , DELETE");
@@ -24,6 +26,7 @@ app.use((req, res, next) => {
     next(); // Important
 })
 
+// API POST point for pushing an item into the cart for a user
   app.post('/addtocart',(req,res)=>{
 	var data_recived=req.body;
 	console.log(data_recived);
@@ -69,7 +72,7 @@ app.use((req, res, next) => {
 			)
 		}
 })
-
+// API POST point for authentication
 app.post('/createuser/:name',(req,res)=>{
 	var data_recived=req.params.name;
 	console.log(data_recived);
@@ -108,7 +111,7 @@ app.post('/createuser/:name',(req,res)=>{
 		}
 })
 
-
+// API get point retriving the item catalog
 app.get('/cat/:itemType',(req,res)=>{
     if(req.params.itemType=="all")
     {
@@ -147,7 +150,7 @@ app.get('/cat/:itemType',(req,res)=>{
 	
 })
 
-
+// API get point retriving the cart
 app.get('/getcart/:salted_uid',(req,res)=>{
     if(req.params.salted_uid==undefined)
     {
