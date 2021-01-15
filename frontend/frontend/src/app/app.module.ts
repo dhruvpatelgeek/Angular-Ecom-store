@@ -18,7 +18,8 @@ import { ItemViewComponent } from './item-view/item-view.component';
 import { FloatCartComponent } from './float-cart/float-cart.component';
 import { BannerComponent } from './banner/banner.component';
 import { PaymentComponent } from './payment/payment.component';
-import { CreditCardComponent } from './credit-card/credit-card.component'
+import { CreditCardComponent } from './credit-card/credit-card.component';
+import { ReciptComponent } from './recipt/recipt.component'
 
 
 
@@ -34,7 +35,8 @@ import { CreditCardComponent } from './credit-card/credit-card.component'
     FloatCartComponent,
     BannerComponent,
     PaymentComponent,
-    CreditCardComponent
+    CreditCardComponent,
+    ReciptComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+
+<div id="heading">
+<p >Recipt</p>
+<hr>
+</div>
+<div class="container">
+    <table class="table">
+        <tbody>
+          <tr *ngFor="let item of listItems">
+            <td>{{item.name }}</td>
+            <td> {{item.cost}}$</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+    
+
+
+
+<div id="total">
+    Total ${{total}}
+</div>
+
+

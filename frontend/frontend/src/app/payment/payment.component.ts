@@ -1,26 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { CreditCardComponent } from '../credit-card/credit-card.component'
+import {Input } from '@angular/core'; // First, import Input
+import {Output,EventEmitter} from '@angular/core';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
   styleUrls: ['./payment.component.css']
 })
 export class PaymentComponent implements OnInit {
+  @Input() saltedToken: string; // decorate the property with @Input()
+  @Output() retCheckout: EventEmitter<string>=new EventEmitter<string>();
   name:string;
   number:string;
   date:string;
+  showLoadingGif:boolean;
+  cardValid:boolean;
   constructor() {
     this.name='';
     this.number='';
     this.date='';
-    
+    this.saltedToken='n/a';
+    this.showLoadingGif=false;
+    this.cardValid=false;
    }
 
   ngOnInit(): void {
-
   }
 
-  
   sendName(event: any){
     this.name=event.target.value;
   }
@@ -49,6 +55,16 @@ export class PaymentComponent implements OnInit {
     {
       event.target.value+=' ';
     }
+
+    if(event.target.value.length==19)
+    {
+      this.cardValid=true;
+    }
+    else{
+      this.cardValid=false;
+    }
+    
+
   }
 
   sendExpDate(event:any){
@@ -67,11 +83,12 @@ export class PaymentComponent implements OnInit {
     {
       event.target.value+='/';
     }
-    
-    
+  }
 
-    
-    
-    
+  exit(){
+    this.showLoadingGif=true;
+    setTimeout(() => {
+      this.retCheckout.emit("logout");
+    }, 2000);
   }
 }

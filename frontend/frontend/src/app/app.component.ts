@@ -7,19 +7,26 @@ import { Addtocart } from './classes/addtocart';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  banner=false;
-  userAuth=false;
-  userId='null';
-  userName='null';
-  title="font";
-  checkout=false;
-  refreshFloatCart=0;
-  constructor(private _freeapiservice:freeapiservice,
-                private commonService: CommonService){
+  banner=false;   // bool to control the notifications
+  userAuth=false; // bool to see if user is auth or not
+  userId='null';  // salted user id retunred by the server
+  userName='null'; // username enteredby the user to be sent to the server
+  title="font";   //legacy[223]
+  checkout=false; // bool to control checkout DOM
+  refreshFloatCart=0;// force cart refresh after adding an item
+  pay=false; // bool to control payment DOM
+
+  constructor(private _freeapiservice:freeapiservice, //HTTPS GET REQ PORT TO MY SERVER
+                private commonService: CommonService){ // USED TO COMMUNATE BETWEEN CHILD COMPONENTS
   }
  
-  changePost(message:string){
+/**
+ * @param {string} message - controls the main DOM structure
+ */
+  changePost(message:string){ // CASE STATEMENT TO MANUPULATE MAIN DOM VIEW
     switch(message){
 
       case"logout":{
@@ -30,14 +37,22 @@ export class AppComponent {
             this.refreshFloatCart=0;
             alert("transcation complete- THANK YOU FOR SHOPPING");// dummy purchace;
             window.location.reload();
+            break;
       }
-      break;
+      
 
       case"checkout":{
         this.checkout=true;
-
+        this.pay=false;
+        break;
       }
-      break;
+
+      case"pay":{
+        this.checkout=false;
+        this.pay=true;
+        break;
+      }
+
       default:
               {
                 this.checkout=false;
@@ -48,7 +63,10 @@ export class AppComponent {
   
   }
   
-  
+  /**
+  * Sends and HTTP post request with object id and user id to append user's cart
+ * @param {string} req - pushes the object into the users cart
+ */
   additem(req){
     var cartobj=new Addtocart;
     cartobj.object_id=req.id;
@@ -77,6 +95,11 @@ export class AppComponent {
     );
   }
 
+/**
+  * Sends and HTTP post request with user name.
+ * @param {string} uid- username entered by the user
+ * @returns {string} userId- salted token returned by the server for auth
+ */
   authUser(uid:string){
       this._freeapiservice.authUserUname(uid)
       .subscribe(

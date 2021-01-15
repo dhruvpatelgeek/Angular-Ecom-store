@@ -40,7 +40,7 @@ export class CheckoutComponent implements OnInit {
   exit(){
     this.showLoadingGif=true;
     setTimeout(() => {
-      this.retCheckout.emit("logout");
+      this.retCheckout.emit("pay");
     }, 2000);
   }
 

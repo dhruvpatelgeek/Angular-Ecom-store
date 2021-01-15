@@ -1,9 +1,17 @@
+
+#main{
+    display: grid;
+}
+
+#container{
+    grid-column: 1/4;
+    grid-row: 1/7;
+}
 #checkout-form{
     font-family: lato;
     font-weight: 300;
     font-size: 2vw;
     padding: 25px;
-    width:30%;
     border: solid 1px black;
 }
 
@@ -39,3 +47,53 @@ input{
     margin-right: auto;
     width: 85%;
   }
+
+  #recipt{
+    grid-column: 5/8;
+    grid-row: 1/-1;
+  }
+
+  #header{
+    font-family: lato;
+    font-size: 5vw;
+    font-weight: 200;
+}
+
+#exit{
+  margin: 3vh;
+  margin-left: 50%;
+  margin-right: auto;
+}
+
+button{
+  white-space: normal;
+  border:0px;
+  font-family: lato;
+  font-size: 1.5vw;
+  height: 50px;
+  padding: 2px;
+  color: black;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(4, 0, 255);
+  box-shadow: 20px rgb(68, 87, 255);
+}
+button:active{
+  color: rgb(255, 255, 255);
+  background-color: rgb(20, 255, 12);
+  box-shadow: 30px rgb(0, 255, 55);
+}
+
+button:disabled{
+  color: rgb(208 208 208);
+  background-color: rgb(236 234 234);
+}
+#loading{
+  position: fixed;
+  top:50vh;
+  right: 50vw;
+}

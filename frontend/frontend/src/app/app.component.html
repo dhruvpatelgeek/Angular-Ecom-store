@@ -1,19 +1,80 @@
+<!--
+checks if we have salted token for the user if not ask the user to login
+(i have not implemented password for the sake fo simplicity)
+-->
 
 <!--
+USER AUTH BLOCK------------------------------------------------
+-->
 <app-login *ngIf="!userAuth;" (loginUser)="authUser($event)"></app-login>
 <app-logo *ngIf="userAuth" ></app-logo>
-
+<!--
+----------------------------------------------------------------
+-->
 
     
 
-<div  *ngIf="userAuth&&(!checkout)">
-    <app-nav (notify)="changePost($event)"></app-nav>
-    <app-item-view (addtocart)="additem($event)"></app-item-view>
-    <app-float-cart id="float" [item]="userId" [refresh]="refreshFloatCart" (notify)="changePost($event)"></app-float-cart>
-    <app-banner *ngIf="banner">Item added to cart</app-banner>
-</div>
-
-<app-checkout  *ngIf="userAuth&&checkout" [item]="userId" (retCheckout)="changePost($event)"></app-checkout>
+<!--
+MAIN VIEW BLOCK------------------------------------------------
 -->
 
-<app-payment></app-payment>
+<!--
+if user is authenticated show the store
+-->
+<div  *ngIf="userAuth&&(!checkout)&&(!pay)">
+     <!-- nav component
+        change the posts wrt the selection made on nav bar
+        OUTPUT: notify->change the card posts
+    -->
+    <app-nav (notify)="changePost($event)"></app-nav>
+    <!-- item view component
+        change the posts wrt the selection made on nav bar
+        OUTPUT: notify->add item to the cart
+    -->
+    <app-item-view (addtocart)="additem($event)"></app-item-view>
+    
+     <!-- floating cart component
+       shows a hovering cart on top of the main view
+        INPUT: item<-salted user token for auth
+        INPUT: refresh<-refresh the cart after adding new item
+        OUTPUT:notify->go to checkout
+    -->
+    <app-float-cart id="float" [item]="userId" [refresh]="refreshFloatCart" (notify)="changePost($event)"></app-float-cart>
+    <!-- banner component
+       displays notifications
+    -->
+    <app-banner *ngIf="banner">Item added to cart</app-banner>
+</div>
+<!--
+----------------------------------------------------------------
+-->
+
+
+
+<!--
+SIGN OUT/PAYMENT BLOCK------------------------------------------------
+-->
+
+ <!--  checkout component
+        change the posts wrt the selection made on nav bar
+        INPUT: item<-salted user token for auth
+        OUTPUT:retCheckout->go BACK or go to PAYMENTS
+-->
+<app-checkout  
+*ngIf="userAuth&&checkout" 
+[item]="userId" 
+(retCheckout)="changePost($event)"
+></app-checkout>
+
+<!--  payment component
+        change the posts wrt the selection made on nav bar
+        INPUT: item<-salted user token for auth
+        OUTPUT:retCheckout->PAYMENTS
+-->
+<app-payment *ngIf="pay" 
+[saltedToken]="userId" 
+(retCheckout)="changePost($event)"
+></app-payment>
+<!--
+----------------------------------------------------------------
+-->

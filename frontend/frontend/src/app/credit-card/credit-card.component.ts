@@ -41,6 +41,8 @@ export class CreditCardComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges) {
+        
+
          if(this._cardHolderName.length>0)
          {
           this.cardHolderName=this._cardHolderName;
@@ -60,24 +62,29 @@ export class CreditCardComponent implements OnInit {
         if(this.cardNumber[0]=='5')
         {
           this.brand="../assets/mastercard.png";
+          if(this.cardNumber.length==19)
+            {
+              this.style='linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)';
+              this.bgSize='400%';
+            }
+            else{
+              this.style="grey";
+            }
+           
+          
         }
         else
         {
           this.brand="../assets/visa.png";
-        }
-        if(this.cardNumber.length==19)
-        {
-          if(this.cardNumber[0]=='5')
-          {
-            this.style='linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)';
-            this.bgSize='400%';
-          }
-          else
-          {
-            this.style='linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)';
-            this.bgSize='400%';
-          }
-          this.bgSize='400%';
+          if(this.cardNumber.length==19)
+            {
+              this.style='linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)';
+              this.bgSize='400%';
+            }
+            else{
+              this.style="black";
+            }
+              
         }
   }
 

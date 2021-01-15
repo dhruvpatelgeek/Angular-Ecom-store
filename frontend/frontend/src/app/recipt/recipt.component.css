@@ -1,0 +1,37 @@
+.container{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2vw;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1vw;
+    border:1px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#total{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2vw;
+
+    padding:1vh;
+    background-color: black;
+    color: white;
+    position: relative;
+
+}
+
+#total_price{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2vw;
+    position: absolute;
+    right: 10px;
+}
+
+#heading{
+    font-family: lato;
+    font-size: 3vw;
+    font-weight: 200;
+}
